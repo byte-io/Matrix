@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 150vh */
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--matrixSize), 100px);
+  grid-template-rows: repeat(var(--matrixSize), 100px);
+  grid-gap: 10px;
+}
+
+.box {
+  color: rgb(11, 11, 11);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.beforeClicked {
+  background-color: rgba(244, 240, 9, 0.928);
+  border: 2px solid rgb(240, 191, 13);
+}
+
+.afterClicked {
+  background-color: rgba(3, 252, 177, 0.928);
+  border: 2px solid rgb(2, 168, 96);
+}
